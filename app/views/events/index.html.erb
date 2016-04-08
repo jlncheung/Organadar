@@ -1,20 +1,33 @@
+<script>
+    $(document).ready(function() {
+   $("#calendar").fullCalendar({
+     theme: false,
+     header: {
+     left: "prev,next today",
+     center: "title",
+     right: "month,agendaWeek,agendaDay"
+     },
+     events: 'events.json',
+     defaultView: "month",
+     height: 1000,
+     slotMinutes: 15
+  });
+});
+
+</script>
+
+
 <br>
 <br>
 
 <div class=wrapper-calendar>
+    <div class=wrapper2>
+    <br>
     <li><%= link_to 'New Event', new_event_path %></li>
-
-
-<div class='simple-calendar'>
-    <%= month_calendar events: @events do |day,events| %>
-        <%= day %>
-    
-    <% events.each do |event| %>
-    <div>
-        <%= link_to event.title, event %>
+    <div id="calendar">
+        <br>
     </div>
-    <% end %>
-    <% end %>
+    </div>
 </div>
 
 

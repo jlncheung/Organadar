@@ -14,7 +14,6 @@ gem 'coffee-rails'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -35,7 +34,9 @@ gem 'paperclip'
 gem 'bootstrap'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'momentjs-rails', '~> 2.5.0'
+gem 'fullcalendar-rails'
+gem 'jquery-ui-rails'
 
 gem 'rspec'
 
@@ -45,7 +46,7 @@ gem 'puma'
 
 gem 'omniauth-facebook'
 
-gem 'simple_calendar', '~> 2.0'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

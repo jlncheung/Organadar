@@ -11,9 +11,11 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
+//= require moment
+//= require fullcalendar
+//= require jquery-ui
 //= require bootstrap
-//= require_tree .
+//= require_self
 
 
 
