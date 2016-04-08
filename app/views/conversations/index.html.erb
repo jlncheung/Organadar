@@ -1,3 +1,6 @@
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
 <div class=wrapper>
 <br \> <br \>
 <div class="container">
@@ -19,7 +22,7 @@
   <tr>
     <th scope="col" class="emailTH">SENDER</th>
     <th scope="col" class="emailTH">SUBJECT</th>
-    <th scope="col" class="emailTH"></th>
+    <th scope="col" class="emailTH">DELETE</th>
   </tr>
   <% if @conversations == nil || @conversations.empty? %>
     <i>Your Inbox folder is currently empty</i>
@@ -45,7 +48,9 @@
        <% end %>
 
     <td class="emailtrashTD">
-      <%= link_to '<i class="fa fa-trash fa-2x"></i>'.html_safe, {:controller => "conversations", :action => "trash", :id => conversation.id}, :title=> "Move to Trash", :method=>'post' %> &nbsp; &nbsp;
+      
+      <%= link_to '<i class="fa fa-trash"></i>'.html_safe, {:controller => "conversations", :action => "trash", :id => conversation.id}, :title=> "Move to Trash", :method=>'post' %> &nbsp; &nbsp;
+
     </td>
   </tr>
    <% end %>
