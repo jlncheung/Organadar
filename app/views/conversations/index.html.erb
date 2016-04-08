@@ -8,7 +8,7 @@
     <div class="title">
       <h1>Conversations</h1></div>
         Click on the subject to open the conversation. You can begin a new conversation by clicking on the "Send Message" button on a person's profile page.
-      <p><h2> <a href="<%= conversations_path %>"> <%= @conversationscount.count %> Inbox </a>
+      <p><h2> <a href="<%= conversations_path %>"> <%= @conversationscount.count %> Inbox </a> | <a href="<%= trashbin_conversations_path %>"> <%= @trash.count %> Trash </a> </h2></p>
     <br>
     <ul>
       
