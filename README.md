@@ -2,6 +2,8 @@
 
 A web application to help organize teams with an interactive calendar, IM, documents upload, etc...
 
+## Deployed at https://organadar.herokuapp.com
+
 ## Navigating webiste
 1. Create an account or Login with:
    - Username: test@test.com
